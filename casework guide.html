@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Casework Guide: Can my House office help?</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500;700;800&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap">
+<style>
+:root{--bg:#f2f5fa;--card:#fff;--ink:#16233f;--mute:#56627d;--line:#d5dcea;--accent:#1f4fd8;--accent-ink:#fff;--yes:#17663a;--yes-bg:#e1f4e8;--no:#8a3b12;--no-bg:#fdeadd;--wait:#6b5300;--wait-bg:#fbf1cc;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1830;--card:#182340;--ink:#e8edfa;--mute:#a3afcb;--line:#2c3a5e;--accent:#7c9bff;--accent-ink:#0f1830;--yes:#7fe0a5;--yes-bg:#14382a;--no:#ffb68a;--no-bg:#40240f;--wait:#f3d86b;--wait-bg:#3a3110}}
+:root[data-theme="dark"]{--bg:#0f1830;--card:#182340;--ink:#e8edfa;--mute:#a3afcb;--line:#2c3a5e;--accent:#7c9bff;--accent-ink:#0f1830;--yes:#7fe0a5;--yes-bg:#14382a;--no:#ffb68a;--no-bg:#40240f;--wait:#f3d86b;--wait-bg:#3a3110}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+main{max-width:640px;margin:0 auto;padding:20px 16px 48px}
+h1,h2{font-family:"Source Serif 4",Georgia,serif;line-height:1.2;margin:0 0 8px}
+h1{font-size:1.7rem}h2{font-size:1.3rem}
+.lede{color:var(--mute);margin:0 0 20px}
+.prog{display:flex;gap:6px;margin:0 0 20px}
+.prog i{flex:1;height:4px;border-radius:2px;background:var(--line)}
+.prog i.on{background:var(--accent)}
+.grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+@media(max-width:420px){.grid{grid-template-columns:1fr}}
+button{font:inherit;color:inherit;cursor:pointer}
+.opt{display:flex;gap:10px;align-items:center;text-align:left;width:100%;padding:12px 14px;background:var(--card);border:1px solid var(--line);border-radius:10px}
+.opt:hover{border-color:var(--accent)}
+.opt b{font-weight:600;display:block;line-height:1.3}
+.opt small{color:var(--mute);display:block;line-height:1.3}
+.ic{font-size:1.4rem}
+.sec{margin:22px 0 8px;font-weight:600;color:var(--mute);font-size:.9rem}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:600}
+.btn.alt{background:transparent;color:var(--accent)}
+.row{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.back{background:none;border:0;color:var(--accent);padding:0;margin:0 0 12px;font-weight:600}
+.verdict{border-radius:12px;padding:16px 18px;margin:0 0 18px}
+.verdict.yes{background:var(--yes-bg);color:var(--yes)}
+.verdict.no{background:var(--no-bg);color:var(--no)}
+.verdict.wait{background:var(--wait-bg);color:var(--wait)}
+.verdict h2{margin:0 0 4px}.verdict p{margin:0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:0 0 14px}
+.card h3{margin:0 0 8px;font-size:1rem}
+.card ul{margin:0;padding-left:20px}.card li{margin:4px 0}
+label.ck{display:flex;gap:10px;align-items:flex-start;padding:6px 0;cursor:pointer}
+label.ck input{margin-top:5px;width:18px;height:18px;accent-color:var(--accent)}
+.done{color:var(--mute);text-decoration:line-through}
+input[type=text],textarea{width:100%;font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:8px;padding:10px}
+textarea{min-height:190px;resize:vertical}
+.f{margin:0 0 10px}.f span{display:block;font-size:.9rem;color:var(--mute);margin-bottom:3px}
+.fine{font-size:.85rem;color:var(--mute)}
+a{color:var(--accent)}
+:focus-visible{outline:3px solid var(--accent);outline-offset:2px}
+:root{--bg:#dde3ec;--accent:#1c3fb7}
+body{font-family:"Source Serif 4",Georgia,serif;font-size:17px;line-height:1.6}
+main{background:var(--card);margin:18px auto;padding:30px 24px 40px;border:1px solid var(--line);border-left:3px solid #c9696a;box-shadow:2px 3px 0 var(--line)}
+h1,h2,.sec,.btn,.opt b,.card h3,.back{font-family:"Libre Franklin",system-ui,sans-serif}
+h1{font-size:2.1rem;font-weight:800;letter-spacing:-.02em;line-height:1.08;margin-bottom:12px}
+h2{font-weight:700}
+.lede{font-size:1.05rem;color:var(--ink);opacity:.8}
+.sec{font-weight:700;font-size:.95rem;color:var(--ink);border-bottom:2px solid var(--ink);padding-bottom:4px;margin-top:26px}
+.grid{grid-template-columns:1fr;gap:0}
+.opt{border:0;border-bottom:1px solid var(--line);border-radius:0;background:transparent;padding:12px 4px}
+.opt:hover{background:var(--bg);border-color:var(--line)}
+.opt b{font-size:1rem}.opt small{font-style:italic;font-size:.95rem}
+.card{background:transparent;border:0;border-left:3px solid var(--accent);border-radius:0;padding:2px 0 2px 16px;margin-bottom:22px}
+.btn{border-radius:3px}
+.prog i{height:3px;border-radius:0}
+.verdict{background:transparent!important;border:3px solid currentColor;border-radius:4px;outline:1px solid currentColor;outline-offset:3px;transform:rotate(-1deg);margin:6px 4px 26px}
+.verdict p{font-size:.98rem;color:var(--ink)}
+input[type=text],textarea{background:transparent;border:0;border-bottom:2px solid var(--line);border-radius:0;padding:8px 2px}
+textarea{border:1px solid var(--line);padding:10px;font-size:.95rem}
+input[type=text]:focus{border-bottom-color:var(--accent)}
+.fine{font-style:italic}
+body{background:var(--card)}
+.band{background:#14213d;color:#fff;padding:calc(12px + env(safe-area-inset-top,0px)) 20px 12px;border-bottom:6px solid transparent;border-image:repeating-linear-gradient(90deg,#b3261e 0 14px,#fff 14px 28px) 1}
+.band div{max-width:640px;margin:0 auto;font:800 1.05rem "Libre Franklin",system-ui,sans-serif;letter-spacing:.01em}
+.band span{display:block;font:italic 400 .85rem "Source Serif 4",Georgia,serif;opacity:.8;letter-spacing:0}
+main{background:transparent;border:0;box-shadow:none;margin:0 auto;padding:30px 20px 48px}
+.prog{display:none}
+h1{font-size:2.4rem}
+.sec{border:0;padding:0;font-size:.95rem;color:var(--mute);font-weight:500;margin-top:24px}
+.opt{border-bottom:2px dotted var(--mute);padding:13px 2px;transition:background .15s}
+.opt>span{display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:2px 14px;width:100%}
+.opt b{font-size:1.1rem}
+.opt:hover{background:var(--wait-bg)}
+.card{border:0;padding:0;margin-bottom:26px}
+.card h3{display:inline;font-size:1.05rem;background:linear-gradient(transparent 58%,var(--wait-bg) 58%);padding:0 2px}
+.card h3+*{margin-top:12px}
+.btn{background:var(--card);color:var(--ink);border:2px solid var(--ink);border-radius:0;box-shadow:3px 3px 0 var(--ink)}
+.btn:not(.alt){background:var(--ink);color:var(--card)}
+.btn:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.back{color:var(--ink);text-decoration:underline}
+input[type=text],textarea{background:var(--card);border:2px solid var(--ink);border-radius:0;padding:9px 10px}
+input[type=text]:focus{border-color:var(--accent)}
+.f{margin-bottom:12px}
+.go{flex:none;font:700 .85rem "Libre Franklin",system-ui,sans-serif;font-style:normal;padding:7px 12px;margin-left:12px;border:2px solid var(--ink);background:var(--card);color:var(--ink);box-shadow:2px 2px 0 var(--ink)}
+.go::after{content:" \203A"}
+.opt:hover .go{background:var(--ink);color:var(--card)}
+.opt:active .go{transform:translate(1px,1px);box-shadow:1px 1px 0 var(--ink)}
+.back{display:inline-block;padding:7px 12px;border:2px solid var(--ink);box-shadow:2px 2px 0 var(--ink);text-decoration:none;font-size:.9rem;margin-bottom:18px}
+button:disabled{cursor:not-allowed}
+</style>
+</head>
+<body>
+<header class="band"><div>Casework Guide</div></header>
+<main id="app"></main>
+<script>
+var CATS=[
+{id:"pass",ic:"🛂",n:"Passport",s:"Delayed or stuck application",ok:1,ag:"U.S. Department of State",
+ items:["Application confirmation or tracking number","Date you applied and whether you paid for expedited service","Your travel date, if you have one","Full name and date of birth exactly as on the application","Any emails or letters you received from the agency"],
+ note:"If you leave within a few weeks, say so up front. Offices treat imminent travel as urgent."},
+{id:"va",ic:"🎖️",n:"VA claim or benefits",s:"Disability, health care, GI Bill",ok:1,ag:"Department of Veterans Affairs",
+ items:["Claim or file number","Date you filed and the claim type","Latest status letter or decision","Names of any VA staff you already spoke with","The specific outcome you are asking for"],
+ note:"A caseworker can ask the VA for a status update or a review. They cannot change a medical or legal decision."},
+{id:"ssa",ic:"🧓",n:"Social Security",s:"Retirement, disability, SSI",ok:1,ag:"Social Security Administration",
+ items:["Claim or application date","Last four digits of your Social Security number (never the full number in a first message)","Copies of notices you received","Dates and times of calls or visits to your local SSA office","What is missing, delayed or wrong"],
+ note:"Offices often help most when a payment is late or a hearing date is taking far longer than expected."},
+{id:"irs",ic:"🧾",n:"IRS or tax refund",s:"Missing refund, notice, audit",ok:1,ag:"Internal Revenue Service",
+ items:["Tax year and filing date","Refund amount you expect","Copies of any IRS notice (with its notice number)","Dates you called or wrote and what you were told","Whether you checked the IRS refund tracker"],
+ note:"A caseworker can ask the IRS to look into delays. They cannot erase a tax debt or change what you owe."},
+{id:"med",ic:"🏥",n:"Medicare",s:"Enrollment, billing, coverage",ok:1,ag:"Medicare / CMS",
+ items:["Medicare number (share only through the privacy form, not by email)","The claim, bill or enrollment date in question","Copies of denial letters or Explanation of Benefits","Names of providers involved","Appeals you have already filed"],
+ note:"Offices can help move an appeal or enrollment problem along. They cannot overrule a coverage rule."},
+{id:"imm",ic:"🌎",n:"Immigration (USCIS)",s:"Green card, visa, citizenship",ok:1,ag:"U.S. Citizenship and Immigration Services",
+ items:["Receipt number (starts with three letters)","Form type and the date it was filed","The date it passed the agency’s posted processing time","Case inquiries you already submitted","Any scheduled appointments or deadlines"],
+ note:"Offices usually need your case to be outside normal processing times before they can ask for a status check."},
+{id:"stu",ic:"🎓",n:"Federal student aid",s:"FAFSA, federal loans, servicer",ok:1,ag:"U.S. Department of Education",
+ items:["Loan servicer name and account reference","What went wrong (wrong balance, no response, wrong forgiveness status)","Dates and notes from calls with the servicer","Any complaint or case number you were given","Copies of statements showing the problem"],
+ note:"This applies to federal loans. Private bank loans are outside a House office’s reach."},
+{id:"dmv",ic:"🚗",n:"Driver’s license or DMV",s:"Plates, registration, tickets",ok:0,wh:"This is run by your state, so a U.S. House office can’t act on it.",tr:["Your state DMV or motor vehicle agency","Your state legislator’s office (state senator or representative)"]},
+{id:"une",ic:"💼",n:"Unemployment benefits",s:"Claims and payments",ok:0,wh:"State unemployment agencies handle these claims, not federal agencies.",tr:["Your state workforce or unemployment agency","Your state legislator’s constituent services"]},
+{id:"loc",ic:"🛣️",n:"Potholes, trash, zoning",s:"Roads, noise, local permits",ok:0,wh:"These are decided by your city, town or county.",tr:["Your city or county 311 line or public works office","Your city council member or county commissioner"]},
+{id:"prv",ic:"🏠",n:"Landlord or employer dispute",s:"Evictions, pay, contracts",ok:0,wh:"Private disputes and court cases are outside a House office’s role.",tr:["A local legal aid organization","Your state attorney general’s consumer office","Your state or federal labor department, if it involves wages"]}
+];
+var S={step:0,cat:null,tried:null,urgent:null,checked:{},name:"",ref:"",desc:""};
+var app=document.getElementById("app");
+function esc(t){return String(t).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function prog(n){var h='<div class="prog" aria-hidden="true">';for(var i=0;i<3;i++)h+='<i class="'+(i<=n?"on":"")+'"></i>';return h+"</div>"}
+function go(s){S.step=s;render();window.scrollTo(0,0)}
+function pick(id){S.cat=CATS.filter(function(c){return c.id===id})[0];S.tried=S.urgent=null;S.checked={};go(S.cat.ok?1:2)}
+function ans(k,v){S[k]=v;render()}
+function reset(){S={step:0,cat:null,tried:null,urgent:null,checked:{},name:"",ref:"",desc:""};render();window.scrollTo(0,0)}
+function yn(k,q,a,b){return '<div class="card"><h3>'+q+'</h3><div class="row" style="margin:0">'+[a,b].map(function(l,i){var v=i===0;return '<button class="btn'+(S[k]===v?"":" alt")+'" onclick="ans(\''+k+'\','+v+')">'+l+'</button>'}).join("")+"</div></div>"}
+function render(){
+var c=S.cat,h="";
+if(S.step===0){
+ h+=prog(0)+'<h1>Does my congressperson’s office actually handle this?</h1><p class="lede">Every House member has staff whose whole job is untangling federal paperwork, and most people never hear about it. Pick your problem. I’ll tell you if they can help and what to have ready before you call.</p><div class="sec">What is your problem about? Tap Choose next to it.</div><div class="grid">';
+ CATS.forEach(function(x){h+='<button class="opt" onclick="pick(\''+x.id+'\')"><span><b>'+x.n+'</b><small>'+x.s+'</small></span><em class="go">Choose</em></button>'});
+ h+='</div><p class="fine" style="margin-top:22px">Made for the Congressional App Challenge. Not affiliated with Congress or any agency, so always check the agency’s own site for current rules.</p>';
+}else if(S.step===1){
+ h+=prog(1)+'<button class="back" onclick="go(0)">‹ Back to topics</button><h2>'+c.n+'</h2><p class="lede">Two quick questions about '+esc(c.ag)+'.</p>';
+ h+=yn("tried","Have you already contacted the agency directly?","Yes, with no fix","Not yet");
+ h+=yn("urgent","Is there a deadline or emergency (travel, missed payment, health)?","Yes","No");
+ var ready=S.tried!==null&&S.urgent!==null;
+ h+='<div class="row"><button class="btn" '+(ready?"":"disabled style=\"opacity:.45\"")+' onclick="go(2)">See my result</button></div>';
+}else{
+ if(!c.ok){
+  h+=prog(2)+'<div class="verdict no"><h2>Not a House office issue</h2><p>'+c.wh+'</p></div><div class="card"><h3>Try these instead</h3><ul>'+c.tr.map(function(t){return"<li>"+t+"</li>"}).join("")+'</ul></div>';
+ }else{
+  var wait=S.tried===false;
+  h+=prog(2);
+  if(wait)h+='<div class="verdict wait"><h2>Yes, but try the agency first</h2><p>'+(S.urgent?"Because this is urgent, you can contact your House office now and mention the deadline right away.":"Most offices expect you to have tried the normal channels. Contact "+esc(c.ag)+" first, and come back if nothing changes.")+'</p></div>';
+  else h+='<div class="verdict yes"><h2>Yes, your House office can likely help</h2><p>A caseworker can contact '+esc(c.ag)+' on your behalf'+(S.urgent?", and your deadline should be flagged as urgent":"")+'.</p></div>';
+  h+='<div class="card"><h3>Gather this first</h3>';
+  c.items.forEach(function(t,i){var k=c.id+i,on=S.checked[k];h+='<label class="ck"><input type="checkbox" '+(on?"checked":"")+' onchange="S.checked[\''+k+'\']=this.checked;render()"><span class="'+(on?"done":"")+'">'+t+"</span></label>"});
+  h+='</div><div class="card"><h3>Good to know</h3><ul><li>'+c.note+'</li><li>The office will likely ask you to sign a <b>privacy release form</b> so the agency may talk to them about your case.</li><li>A caseworker can ask for a review or an answer. Nobody can promise the result.</li></ul></div>';
+  h+='<div class="card"><h3>Draft your first message</h3><div class="f"><span>Your name</span><input type="text" value="'+esc(S.name)+'" oninput="S.name=this.value;upd()"></div><div class="f"><span>Case, receipt or claim number</span><input type="text" value="'+esc(S.ref)+'" oninput="S.ref=this.value;upd()"></div><div class="f"><span>What has happened, in a sentence or two</span><input type="text" value="'+esc(S.desc)+'" oninput="S.desc=this.value;upd()"></div><textarea id="draft" aria-label="Draft message"></textarea><div class="row"><button class="btn" onclick="cp()" id="cpb">Copy message</button><a class="btn alt" style="text-decoration:none" target="_blank" rel="noopener" href="https://www.house.gov/representatives/find-your-representative">Find your House office</a></div></div>';
+ }
+}
+if(S.step>=2)h+='<div class="row"><button class="btn alt" onclick="reset()">Start over</button></div>';
+app.innerHTML=h;upd();
+}
+function upd(){var t=document.getElementById("draft");if(!t||!S.cat)return;var c=S.cat;
+ var d=document.activeElement,keep=d&&d.tagName==="TEXTAREA";
+ t.value="Hello,\n\nI live in your district and need help with a problem involving the "+c.ag+".\n\n"+(S.desc||"[Describe what happened and when it started.]")+"\n\nReference number: "+(S.ref||"[add number]")+"\n"+(S.urgent?"Deadline or urgency: [add date and reason]\n":"")+"I have already contacted the agency directly: "+(S.tried===false?"no":"yes, without a resolution")+".\n\nPlease let me know what you need from me, including a privacy release form.\n\nThank you,\n"+(S.name||"[Your name]")+"\n[Your address and phone number]"}
+function cp(){var t=document.getElementById("draft"),b=document.getElementById("cpb");t.select();var ok=false;try{ok=document.execCommand("copy")}catch(e){}
+ try{if(navigator.clipboard)navigator.clipboard.writeText(t.value)}catch(e){}
+ b.textContent=ok?"Copied":"Selected, press copy";setTimeout(function(){b.textContent="Copy message"},2000)}
+render();
+</script>
+</body>
+</html>
